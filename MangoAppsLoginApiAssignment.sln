@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangoAppsLoginApi", "MangoAppsLoginApi\MangoAppsLoginApi.csproj", "{3AB70838-D788-4C3F-B06B-73D2EF76F829}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MangoApp", "MangoApp\MangoApp.vdproj", "{9E8C991A-2C27-4627-AD63-F9566F62F8C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AB70838-D788-4C3F-B06B-73D2EF76F829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB70838-D788-4C3F-B06B-73D2EF76F829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB70838-D788-4C3F-B06B-73D2EF76F829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB70838-D788-4C3F-B06B-73D2EF76F829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E8C991A-2C27-4627-AD63-F9566F62F8C5}.Debug|Any CPU.ActiveCfg = Debug
+		{9E8C991A-2C27-4627-AD63-F9566F62F8C5}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36EA9EC3-C9FB-4E0A-97FC-2023DFF378DB}
+	EndGlobalSection
+EndGlobal
