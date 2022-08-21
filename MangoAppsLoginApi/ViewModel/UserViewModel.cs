@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.ComponentModel;
 using System.Windows.Input;
 using MangoAppsLoginApi.Commands;
@@ -8,7 +8,7 @@ using System.Windows.Controls;
 
 namespace MangoAppsLoginApi.ViewModel
 {
-    public class UserViewModel : INotifyPropertyChanged, IDataErrorInfo
+    public class UserViewModel : INotifyPropertyChanged
     {
         private User vmuser;
         private string _domainUrl;
@@ -40,7 +40,7 @@ namespace MangoAppsLoginApi.ViewModel
         {
             get
             {
-                if (vmuser.username != null)
+                if (vmuser.username != null && vmuser.username.Contains('@'))
                 {
                     string domain = vmuser.username.Split('@')[1];
                     string domain2 = domain.Split('.').Last();
@@ -88,30 +88,12 @@ namespace MangoAppsLoginApi.ViewModel
         }
 
         #region "IDataErrorInfo for input validation"
+        
         public string Error
         {
             get { return null; }
         }
-
-        public string this[string property]
-        {
-            get
-            {
-                string result = string.Empty;
-                if(property== "username")
-                {
-                    if (username.Length < 4 || username.Length > 100)
-                    {
-                        result = "LoginId must have atleast 4 characters and maximum 100 characters";
-                    }
-                    else if (!Common.IsValidLoginId(username))
-                    {
-                        result = "LoginId should be in a correct Email format";
-                    }
-                }             
-                return result;
-            }
-        }
+   
         
         #endregion
     }
